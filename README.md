@@ -18,3 +18,5 @@ I created this app to help organize my finances wife's.
 ### Important Notes
 
 - The CATEGORY and PERSON columns are left blank for manual entry later.
+
+You can try using it via https://appextratos.streamlit.app/
