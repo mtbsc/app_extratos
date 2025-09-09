@@ -67,7 +67,7 @@ def nb_formater(arquivo):
     df_csv = df_csv.rename(columns = {"Descrição": "ITEM"})
     #
 
-    df_csv["ITEM"] = df_csv["ITEM"].apply(lambda x: str(x).split(" - ")[1].strip()) #removendo a descrição que vem antes do "-" (geralmente é algo do tipo 'compra no débito')
+    df_csv["ITEM"] = df_csv["ITEM"].apply(lambda x: str(x).split(" - ")[-1].strip()) #removendo a descrição que vem antes do "-" (geralmente é algo do tipo 'compra no débito')
 
     # criando colunas que faltam (categoria, pessoa e cartão)
     df_csv["PESSOA"] = ""
